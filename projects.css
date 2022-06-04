@@ -1,0 +1,199 @@
+@media only screen and (min-width: 1500px) {
+  header {
+    width: 80%;
+    align-items: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .navbar a {
+    display: inline-block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+  .navbar a:hover {
+    background-color: #573d66;
+    color: white;
+  }
+  .navbar a.active {
+    background-color: #4c3957;
+    color: white;
+  }
+
+  .navbar.responsive {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+    margin: 10px 20px;
+  }
+
+  .navigation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .menuBar {
+    cursor: pointer;
+    grid-column: 2/3;
+    margin: 0 auto;
+    padding-left: 300px;
+  }
+
+  .bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #35668d;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .newstyle .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .newstyle .bar2 {
+    opacity: 0;
+  }
+
+  .newstyle .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .projects__h1 {
+    font-size: 3em;
+  }
+
+  .projects__p {
+    font-size: 1em;
+    width: 1000px;
+  }
+
+  .project__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  .project__cardsimg {
+    max-width: 700px;
+  }
+
+  #project__img {
+    max-height: 400px;
+  }
+
+  .mwm {
+    position: relative;
+  }
+
+  .mwm__overlay {
+    position: absolute;
+    bottom: 25px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .mwm:hover .mwm__overlay {
+    opacity: 1;
+  }
+
+  .cmo {
+    position: relative;
+  }
+
+  .cmo__overlay {
+    position: absolute;
+    bottom: 25px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cmo:hover .cmo__overlay {
+    opacity: 1;
+  }
+
+  .honda {
+    position: relative;
+  }
+
+  .honda__overlay {
+    position: absolute;
+    bottom: 15px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .honda:hover .honda__overlay {
+    opacity: 1;
+  }
+
+  .wd {
+    position: relative;
+  }
+
+  .wd__overlay {
+    position: absolute;
+    bottom: 15px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .wd:hover .wd__overlay {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=projects.css.map */

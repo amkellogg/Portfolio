@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="ak.css" />
+        <link rel="stylesheet" href="projects.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -35,9 +36,6 @@
                     <a href="https://amkellogg.github.io/Portfolio/ak-about.html"
                         >About</a
                     >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-services.html"
-                        >Services</a
-                    >
                     <a href="https://amkellogg.github.io/Portfolio/ak-contact.html"
                         >Contact</a
                     >
@@ -50,39 +48,59 @@
             </div>
         </header>
         <main>
-            <h1>Projects</h1>
-            <p>Welcome to my projects</p>
+            <h1 class="projects__h1">Projects</h1>
+            <p class="projects__p">Welcome to my projects page! As a graphic designer, 
+                I love the whole design process and wanted to learn more about it. 
+                This want to learn more guided me to take many programming classes 
+                where I learned to understand and appreciate the minds behind the 
+                creation of the designs that UX/UI designers hand over. I decided 
+                to go through the entire design process as a personal project, to 
+                see how I could implement my design skills and programming skills 
+                all in one place. This website is just that. Here I display my 
+                graphic deisgn projects on a website I also designed and built. 
+                If you have any questions, feel free to reach out on the contact page. Thanks! </p>
             <!-- <div id="cards"></div> -->
-            <section>
-                <a href="">
-                    <img src="" alt="" />
+            <div class="project__cards">
+            <section class="mwm">
+                <a href="https://amkellogg.github.io/Portfolio/ak-mwm.html">
+                    <img id="project__img" src="images/MWM.png" alt="Mills wealth management website on a laptop" />
                 </a>
-                <p>Mills Wealth Management</p>
+                <a href="https://amkellogg.github.io/Portfolio/ak-mwm.html">
+                    <div class="mwm__overlay">Mills Wealth Management</div>
+                </a>
+            </section>
+            <section class="cmo">
+                <a href="https://amkellogg.github.io/Portfolio/ak-cmo.html">
+                    <img id="project__img" src="images/CMO6.png" alt="image of CMO website on laptop" />
+                </a>
+                <a href="https://amkellogg.github.io/Portfolio/ak-cmo.html">
+                    <div class="cmo__overlay">Clean Mobility Options Webpage Redesign</div>
+                </a>
+            </section>
+            <section class="honda">
+                <a href="https://amkellogg.github.io/Portfolio/ak-honda.html">
+                    <img id="project__img" src="images/hondano.png" alt="image of honda app on phone" />
+                </a>
+                <a href="https://amkellogg.github.io/Portfolio/ak-honda.html">
+                    <div class="honda__overlay">Case Study: Honda App</div>
+                </a>
+            </section>
+            <section class="wd">
+                <a href="https://amkellogg.github.io/Portfolio/ak-wd.html">
+                    <img  id="project__img" src="images/wdno.png" alt="image of workday app on phone" />
+                </a>
+                <a href="https://amkellogg.github.io/Portfolio/ak-wd.html">
+                    <div class="wd__overlay">Case Study: Workday App</div>
+                </a>
             </section>
             <section>
-                <a href="">
+                <a href="https://amkellogg.github.io/Portfolio/ak-elavate.html">
                     <img src="" alt="" />
                 </a>
-                <p>Clean Mobility Options Webpage Redesign</p>
+
+                <!-- <p>Case Study: Elevate</p> -->
             </section>
-            <section>
-                <a href="">
-                    <img src="" alt="" />
-                </a>
-                <p>Case Study: Honda App</p>
-            </section>
-            <section>
-                <a href="">
-                    <img src="" alt="" />
-                </a>
-                <p>Case Study: Workday App</p>
-            </section>
-            <section>
-                <a href="">
-                    <img src="" alt="" />
-                </a>
-                <p>Case Study: Elevate</p>
-            </section>
+        </div>
         </main>
         <footer class="footer">
             <div class="footerImages">
