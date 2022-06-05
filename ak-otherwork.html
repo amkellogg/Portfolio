@@ -5,45 +5,124 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="ak.css" />
+        <link rel="stylesheet" href="projects.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
         <link rel="shortcut icon" type="image/x-icon" href="images/ABfavicon.ico" />
         <script src="ak.js" defer></script>
-
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Other Work</title>
     </head>
-    <body>
-        <header>
-            <div class="logo">
+    <body class="px-7 md:px-8 max-w-7xl flex flex-col items-center mx-auto overflow-x-hidden overflow-y-scroll">
+        <header class="my-6 w-full flex items-center justify-between">
+            <div class="w-14 h-auto flex">
                 <a href="https://amkellogg.github.io/Portfolio/ak-projects.html">
                     <img src="images/Alogo.png" alt="logo" />
                 </a>
             </div>
-            <div class="navigation">
-                <nav class="navbar">
-                    <a href="https://amkellogg.github.io/Portfolio/ak-projects.html"
-                        >UX/UI Work</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html"
-                        >Other Design Work</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-about.html"
-                        >About</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-contact.html"
-                        >Contact</a
-                    >
-                </nav>
-                <div class="menuBar" onclick="show(this)">
+
+            <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right hidden lg:hidden" id="mobile-menu">
+                <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div class="px-5 pt-4 flex items-center justify-between">
+                        <div>
+                            <img class="h-auto w-14" src="images/Alogo.png" alt="" />
+                        </div>
+                        <div class="-mr-2">
+                            <button
+                                onclick="hide()"
+                                type="button"
+                                class="
+                                    bg-white
+                                    rounded-md
+                                    p-2
+                                    inline-flex
+                                    items-center
+                                    justify-center
+                                    text-gray-400
+                                    hover:text-gray-500
+                                    hover:bg-gray-100
+                                    focus:outline-none
+                                    focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                                "
+                            >
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-2 pt-2 pb-3">
+                        <a href="https://amkellogg.github.io/Portfolio/ak-projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >UX/UI Work</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Other Work</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >About</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <nav class="flex space-x-10 hidden lg:flex">
+                <div>
+                    <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-projects.html">UX/UI Work</a>
+                </div>
+                <div>
+                    <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-otherwork.html">Other Work</a>
+                </div>
+                <div>
+                    <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-about.html">About</a>
+                </div>
+                <div>
+                    <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-contact.html">Contact</a>
+                </div>
+            </nav>
+            <div class="-mr-2 flex items-center lg:hidden">
+                <button
+                    onclick="show()"
+                    type="button"
+                    class="
+                        bg-gray-50
+                        rounded-md
+                        p-2
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-gray-400
+                        hover:text-gray-500
+                        hover:bg-gray-100
+                        focus:outline-none
+                        focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                    "
+                    aria-expanded="false"
+                >
+                    <span class="sr-only"></span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- <div class="bg-orange-300 h-20 w-20"></div>
+            <div class="flex justify-end">
+                <div class="menuBar" onclick="show()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-            </div>
+            </div> -->
         </header>
         <main>
             <h1>Other Work</h1>
