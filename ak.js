@@ -40,8 +40,13 @@ function populateCards(projects) {
     document.querySelector("#cards").appendChild(card);
 }
 
-function show(x) {
-    x.classList.toggle("newstyle");
+function show() {
+    let menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+}
+function hide() {
+    let menu = document.getElementById("mobile-menu");
+    menu.classList.add("hidden");
 }
 //hamburger menu:
 

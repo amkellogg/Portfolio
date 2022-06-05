@@ -5,68 +5,163 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="ak.css" />
+        <link rel="stylesheet" href="projects.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
         <link rel="shortcut icon" type="image/x-icon" href="images/ABfavicon.ico" />
         <script src="ak.js" defer></script>
-
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>About</title>
     </head>
-    <body>
-        <header>
-            <div class="logo">
+    <body class="px-7 md:px-8 max-w-7xl flex flex-col items-center mx-auto overflow-x-hidden overflow-y-scroll">
+        <header class="my-6 w-full flex items-center justify-between">
+            <div class="w-14 h-auto flex">
                 <a href="https://amkellogg.github.io/Portfolio/ak-projects.html">
                     <img src="images/Alogo.png" alt="logo" />
                 </a>
             </div>
-            <div class="navigation">
-                <nav class="navbar">
-                    <a href="https://amkellogg.github.io/Portfolio/ak-projects.html"
-                        >UX/UI Work</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html"
-                        >Other Design Work</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-about.html"
-                        >About</a
-                    >
-                    <a href="https://amkellogg.github.io/Portfolio/ak-contact.html"
-                        >Contact</a
-                    >
-                </nav>
-                <div class="menuBar" onclick="show(this)">
+
+            <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right hidden lg:hidden" id="mobile-menu">
+                <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div class="px-5 pt-4 flex items-center justify-between">
+                        <div>
+                            <img class="h-auto w-14" src="images/Alogo.png" alt="" />
+                        </div>
+                        <div class="-mr-2">
+                            <button
+                                onclick="hide()"
+                                type="button"
+                                class="
+                                    bg-white
+                                    rounded-md
+                                    p-2
+                                    inline-flex
+                                    items-center
+                                    justify-center
+                                    text-gray-400
+                                    hover:text-gray-500
+                                    hover:bg-gray-100
+                                    focus:outline-none
+                                    focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                                "
+                            >
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-2 pt-2 pb-3">
+                        <a href="https://amkellogg.github.io/Portfolio/ak-projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >UX/UI Work</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Other Work</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >About</a
+                        >
+
+                        <a href="https://amkellogg.github.io/Portfolio/ak-contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <nav class="flex space-x-10 hidden lg:flex">
+                <div>
+                    <a class="block" href="https://amkellogg.github.io/Portfolio/ak-projects.html">UX/UI Work</a>
+                </div>
+                <div>
+                    <a class="block" href="https://amkellogg.github.io/Portfolio/ak-otherwork.html">Other Work</a>
+                </div>
+                <div>
+                    <a class="block" href="https://amkellogg.github.io/Portfolio/ak-about.html">About</a>
+                </div>
+                <div>
+                    <a class="block" href="https://amkellogg.github.io/Portfolio/ak-contact.html">Contact</a>
+                </div>
+            </nav>
+            <div class="-mr-2 flex items-center lg:hidden">
+                <button
+                    onclick="show()"
+                    type="button"
+                    class="
+                        bg-gray-50
+                        rounded-md
+                        p-2
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-gray-400
+                        hover:text-gray-500
+                        hover:bg-gray-100
+                        focus:outline-none
+                        focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                    "
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- <div class="bg-orange-300 h-20 w-20"></div>
+            <div class="flex justify-end">
+                <div class="menuBar" onclick="show()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-            </div>
+            </div> -->
         </header>
         <main>
-            <section class="aboutContainer">
-                <div class="about">
-                    <h4 class="h4Caps">Hello, I'm Anna Kellogg</h4>
-                    <h1>User Experience Designer</h1>
-                    <h3>Currently a senior at Brigham Young University</h3>
+            <section class="md:mt-10">
+                <!-- <div class="about"> -->
+                <div class="flex items-center justify-between">
+                    <div class="grid space-y-2">
+                        <h2 class="uppercase font-sans text-3xl">
+                            Hello, <br />
+                            I'm Anna Kellogg
+                        </h2>
+                        <div class="flex items-center">
+                            <img class="sm:hidden w-24 h-24 rounded-full mr-5" src="images/myPic.jpg" alt="Photo of Anna Kellogg" />
+                            <div>
+                                <h3 class="text-2xl font-thin">UX/UI Designer</h3>
+                                <h3>Senior at BYU-Idaho</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative hidden sm:block">
+                        <div class="bg-[#e9c25e] h-[50px] w-[50px] absolute bottom-0 left-0 rounded-full flex items-center justify-center">
+                            <div class="ml-[2px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <img class="w-40 h-40 rounded-full" src="images/myPic.jpg" alt="Photo of Anna Kellogg" />
+                    </div>
                 </div>
-                <p class="aboutP">
-                    I am a senior at Brigham Young University-Idaho. I am ambitiously
-                    studying modern design practices and work flow to make myself an asset
-                    through applied coursework. These design practices involve User
-                    Experience and User Interface design which I am actively learning more
-                    about and practicing. Through user testing I have been able to learn
-                    how to design a product to make it more user friendly as well as
-                    beautiful. These have also increased my knowledge and skill with
-                    problem solving, communication, planning, and translation.
-                </p>
-                <div class="myPic">
-                    <img src="images/myPic.jpg" alt="Photo of Anna Kellogg" />
+                <div class="grid space-y-4 mt-4 md:mt-8">
+                    <p>I am a senior at Brigham Young University-Idaho. I am ambitiously studying modern design practices and work flow to make myself an asset through applied coursework.</p>
+                    <p>
+                        These design practices involve User Experience and User Interface design which I am actively learning more about and practicing. Through user testing I have been able to learn
+                        how to design a product to make it more user friendly as well as beautiful.
+                    </p>
                 </div>
-                <div class="resume">
-                    <embed src="AnnaKelloggsResume.pdf" />
+                <div class="mx-auto border-[2px] border-slate-200 rounded my-20 max-w-2xl">
+                    <img class="h-auto w-full my-6" src="images/resume.jpg" alt="resume" />
                 </div>
             </section>
         </main>

@@ -1,6 +1,5 @@
 @media only screen and (min-width: 1500px) {
   header {
-    width: 80%;
     align-items: center;
   }
 
@@ -94,7 +93,7 @@
   }
 
   #project__img {
-    max-height: 400px;
+    height: 400px;
   }
 
   .mwm {
@@ -124,6 +123,9 @@
 
   .cmo {
     position: relative;
+  }
+  .cmo.project__img {
+    height: 101%;
   }
 
   .cmo__overlay {
