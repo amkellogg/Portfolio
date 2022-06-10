@@ -179,7 +179,6 @@ form {
   max-width: 500px;
   margin: 10px auto;
   border-radius: 8px;
-  justify-items: center;
 }
 
 label {
@@ -190,9 +189,8 @@ label {
 
 input {
   padding: 5px;
-  display: block;
-  margin: 5px auto;
-  width: 150px;
+  margin: auto;
+  width: 200px;
 }
 
 textarea {
