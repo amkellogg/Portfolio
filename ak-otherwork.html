@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="ak.css" />
         <link rel="stylesheet" href="projects.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
         <link rel="shortcut icon" type="image/x-icon" href="images/ABfavicon.ico" />
         <script src="ak.js" defer></script>
-        <script src="https://cdn.tailwindcss.com"></script>
         <title>Other Work</title>
     </head>
     <body class="px-7 md:px-8 max-w-7xl flex flex-col items-center mx-auto overflow-x-hidden overflow-y-scroll">
@@ -125,24 +125,34 @@
             </div> -->
         </header>
         <main>
-            <h1>Other Work</h1>
+            <h1 class="projects__h1 uppercase font-sans text-3xl lg:text-5xl pb-3 text-[#50295A]">Other Work</h1>
+            <p class="projects__p">On this page, I display a few of the other projects that I have done. These are</p>
+
             <div class="otherWork">
-                <picture>
-                    <img src="images/other/other1.jpg" />
-                    <figcaption>Flyer work for CALSTART: Flow chart</figcaption>
-                </picture>
-                <picture>
-                    <img src="images/other/other4.jpg" />
-                    <figcaption>Flyer work for CALSTART</figcaption>
-                </picture>
-                <picture>
-                    <img src="images/other/other2.jpg" />
-                    <figcaption>Magazine Design</figcaption>
-                </picture>
-                <picture>
-                    <img src="images/other/other3.png" />
-                    <figcaption>Restaurant Design Guide</figcaption>
-                </picture>
+                <section class="otherWork__CAL1">
+                    <picture>
+                        <img src="images/other/other1.jpg" />
+                        <figcaption>Flyer work for CALSTART: Flow chart</figcaption>
+                    </picture>
+                </section>
+                <section class="otherWork__Mag">
+                    <picture>
+                        <img src="images/other/other2.jpg" />
+                        <figcaption>Magazine Design</figcaption>
+                    </picture>
+                </section>
+                <section class="otherWork__CAL2">
+                    <picture>
+                        <img src="images/other/other4.jpg" />
+                        <figcaption>Flyer work for CALSTART</figcaption>
+                    </picture>
+                </section>
+                <section class="otherWork__Rest">
+                    <picture>
+                        <img src="images/other/other3.png" />
+                        <figcaption>Restaurant Design Guide</figcaption>
+                    </picture>
+                </section>
             </div>
         </main>
         <footer class="footer">

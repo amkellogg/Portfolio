@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="ak.css" />
         <link rel="stylesheet" href="projects.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
         <link rel="shortcut icon" type="image/x-icon" href="images/ABfavicon.ico" />
         <script src="ak.js" defer></script>
-        <script src="https://cdn.tailwindcss.com"></script>
         <title>Projects</title>
     </head>
     <body class="px-7 md:px-8 max-w-7xl flex flex-col items-center mx-auto overflow-x-hidden overflow-y-scroll">
@@ -59,10 +59,10 @@
                         <a href="https://amkellogg.github.io/Portfolio/ak-projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >UX/UI Work</a
                         >
-
+                        <!-- 
                         <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >Other Work</a
-                        >
+                        > -->
 
                         <a href="https://amkellogg.github.io/Portfolio/ak-about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >About</a
@@ -79,9 +79,9 @@
                 <div>
                     <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-projects.html">UX/UI Work</a>
                 </div>
-                <div>
+                <!-- <div>
                     <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-otherwork.html">Other Work</a>
-                </div>
+                </div> -->
                 <div>
                     <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-about.html">About</a>
                 </div>
@@ -125,7 +125,7 @@
             </div> -->
         </header>
         <main>
-            <h1 class="projects__h1">Projects</h1>
+            <h1 class="uppercase font-sans text-3xl lg:text-5xl pb-3 text-[#50295A] projects__h1">UX/UI Work</h1>
             <p class="projects__p">
                 Welcome to my projects page! As a graphic designer, I love the whole design process and wanted to learn more about it. This want to learn more guided me to take many programming
                 classes where I learned to understand and appreciate the minds behind the creation of the designs that UX/UI designers hand over. I decided to go through the entire design process as a
@@ -134,15 +134,15 @@
             </p>
             <!-- <div id="cards"></div> -->
             <div class="project__cards">
-                <section class="mwm mt-10">
-                    <a href="https://amkellogg.github.io/Portfolio/ak-mwm.html">
+                <section class="mwm">
+                    <a class="font-bold" href="https://amkellogg.github.io/Portfolio/ak-mwm.html">
                         <img id="project__img" src="images/MWM.png" alt="Mills wealth management website on a laptop" />
                     </a>
                     <a href="https://amkellogg.github.io/Portfolio/ak-mwm.html">
                         <div class="mwm__overlay">Mills Wealth Management</div>
                     </a>
                 </section>
-                <section class="cmo mt-11">
+                <section class="cmo">
                     <a href="https://amkellogg.github.io/Portfolio/ak-cmo.html">
                         <img id="project__img" src="images/CMO6.png" alt="image of CMO website on laptop" />
                     </a>
@@ -150,7 +150,7 @@
                         <div class="cmo__overlay">Clean Mobility Options Webpage Redesign</div>
                     </a>
                 </section>
-                <section class="honda mt-10">
+                <section class="honda">
                     <a href="https://amkellogg.github.io/Portfolio/ak-honda.html">
                         <img id="project__img" src="images/hondano.png" alt="image of honda app on phone" />
                     </a>
@@ -158,7 +158,7 @@
                         <div class="honda__overlay">Case Study: Honda App</div>
                     </a>
                 </section>
-                <section class="wd mt-10">
+                <section class="wd">
                     <a href="https://amkellogg.github.io/Portfolio/ak-wd.html">
                         <img id="project__img" src="images/wdno.png" alt="image of workday app on phone" />
                     </a>
@@ -166,13 +166,13 @@
                         <div class="wd__overlay">Case Study: Workday App</div>
                     </a>
                 </section>
-                <section>
+                <!-- <section>
                     <a href="https://amkellogg.github.io/Portfolio/ak-elavate.html">
                         <img src="" alt="" />
                     </a>
 
-                    <!-- <p>Case Study: Elevate</p> -->
-                </section>
+                     <p>Case Study: Elevate</p>
+                </section> -->
             </div>
         </main>
         <footer class="footer mt-10">
