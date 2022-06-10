@@ -59,7 +59,7 @@
                         <a href="https://amkellogg.github.io/Portfolio/ak-projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >UX/UI Work</a
                         >
-<!-- 
+                        <!-- 
                         <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >Other Work</a
                         > -->
@@ -124,28 +124,27 @@
                 </div>
             </div> -->
         </header>
-        <main class="flex-grow ">
+        <main class="flex-grow">
             <div class="w-4/6 m-auto mb-5">
                 <h1 class="uppercase font-sans text-2xl lg:text-4xl pb-3 text-[#50295A]">Contact</h1>
                 <p>Feel free to contact me if you have any questions, or email me at annamkellogg@gmail.com!</p>
             </div>
 
-            <form
-            action="https://formspree.io/f/moqrnbnl"
-            method="POST"
-                >
+            <form class="pb-5" action="https://formspree.io/f/moqrnbnl" method="POST">
                 <!-- <label for="first_name">First Name: * </label>
                 <input name="first_name" type="text" id="first_name" /> -->
-                <div >
-                    <label for="first_name" class="block text-sm font-medium text-gray-900">First name</label>
-                    <div class="mt-1">
-                        <input
-                            type="text"
-                            name="first_name"
-                            id="first_name"
-                            autocomplete="given-name"
-                            class="mb-4 py-3 px-4 block w-4/6 shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto "
-                        />
+                <div class="flex justify-around mt-5">
+                    <div>
+                        <label for="first_name" class="block text-sm font-medium text-gray-900">First name</label>
+                        <div class="mt-1">
+                            <input
+                                type="text"
+                                name="first_name"
+                                id="first_name"
+                                autocomplete="given-name"
+                                class="mb-4 py-3 px-4 block shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
+                            />
+                        </div>
                     </div>
                     <div>
                         <label for="last_name" class="block text-sm font-medium text-gray-900">Last name</label>
@@ -155,83 +154,85 @@
                                 name="last_name"
                                 id="last_name"
                                 autocomplete="family-name"
-                                class="mb-4 py-3 px-4 block w-4/6 shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
+                                class="mb-4 py-3 px-4 block shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
                             />
                         </div>
+                    </div>
+                </div>
+                <div class="flex justify-around">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
+                        <div class="mt-1">
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                class="mb-4 py-3 px-4 block shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
+                            />
                         </div>
+                    </div>
+                    <div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
-                            <div class="mt-1">
-                                <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    autocomplete="email"
-                                    class="mb-4 py-3 px-4 block w-4/6 shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
-                                />
-                            </div>
+                            <label for="phone" class="block text-sm font-medium text-gray-900">Phone</label>
+                            <!-- <span id="phone-optional" class="text-sm text-gray-500 m-auto"></span> -->
                         </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <label for="phone" class="block text-sm font-medium text-gray-900  m-auto">Phone</label>
-                                <!-- <span id="phone-optional" class="text-sm text-gray-500 m-auto"></span> -->
-                            </div>
-                            <div class="mt-1">
-                                <input
-                                    type="text"
-                                    name="phone"
-                                    id="phone"
-                                    autocomplete="tel"
-                                    class="mb-4 py-3 px-4 block w-4/6 shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
-                                    aria-describedby="phone-optional"
-                                />
-                            </div>
+                        <div class="mt-1">
+                            <input
+                                type="text"
+                                name="phone"
+                                id="phone"
+                                autocomplete="tel"
+                                class="mb-4 py-3 px-4 block shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md m-auto"
+                                aria-describedby="phone-optional"
+                            />
                         </div>
-                        
-                        <div class="sm:col-span-2">
-                            <div class="flex justify-between">
-                                <label for="message" class="block text-sm font-medium text-gray-900 m-auto">Message</label>
-                                <!-- <span id="message-max" class="text-sm text-gray-500"></span> -->
-                            </div>
-                            <div class="mt-1">
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    class=" mb-2 py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md m-auto"
-                                    aria-describedby="message-max"
-                                ></textarea>
-                            </div>
-                        </div>
-                        <div class="sm:col-span-2 sm:flex sm:justify-end">
-                            <button
-                                type="submit"
-                                class="
-                                    mt-2
-                                    mb-2
-                                    w-full
-                                    inline-flex
-                                    items-center
-                                    justify-center
-                                    px-6
-                                    py-3
-                                    border border-transparent
-                                    rounded-md
-                                    shadow-sm
-                                    text-base
-                                    font-medium
-                                    text-white
-                                    bg-[#73547b]
-                                    hover:bg-[#50295A]
-                                    focus:outline-none
-                                    focus:ring-2 focus:ring-offset-2 focus:ring-[#50295A]
-                                    sm:w-auto
-                                    m-auto
-                                "
-                            >
-                                Submit
-                            </button>
-                        </div>
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <div class="flex justify-between">
+                        <label for="message" class="block text-sm font-medium text-gray-900 m-auto">Message</label>
+                        <!-- <span id="message-max" class="text-sm text-gray-500"></span> -->
+                    </div>
+                    <div class="mt-1">
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            class="mb-2 block w-[500px] shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md m-auto"
+                            aria-describedby="message-max"
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="sm:col-span-2 sm:flex sm:justify-end">
+                    <button
+                        type="submit"
+                        class="
+                            mt-2
+                            mb-2
+                            w-full
+                            inline-flex
+                            items-center
+                            justify-center
+                            px-6
+                            py-3
+                            border border-transparent
+                            rounded-md
+                            shadow-sm
+                            text-base
+                            font-medium
+                            text-white
+                            bg-[#73547b]
+                            hover:bg-[#50295A]
+                            focus:outline-none
+                            focus:ring-2 focus:ring-offset-2 focus:ring-[#50295A]
+                            sm:w-auto
+                            m-auto
+                        "
+                    >
+                        Submit
+                    </button>
+                </div>
 
                 <!-- <label for="last_name">Last Name:</label>
                 <input name="last_name" type="text" id="last_name" />
