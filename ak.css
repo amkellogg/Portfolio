@@ -348,13 +348,11 @@ picture {
   .navigation {
     display: inline;
   }
-
   .navbar {
     grid-column: 2/3;
     display: flex;
     justify-content: right;
   }
-
   .navbar a {
     display: inline-block;
     color: black;
@@ -371,36 +369,29 @@ picture {
     background-color: #4c3957;
     color: white;
   }
-
   .menuBar {
     display: none;
   }
-
   .aboutContainer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 280px 200px 2fr 1fr;
   }
-
   .about {
     grid-column: 1/2;
   }
-
   .h4Caps {
     text-transform: uppercase;
   }
-
   .myPic img {
     width: 250px;
     border-radius: 50%;
     margin-top: 5px;
     margin-left: 5px;
   }
-
   .myPic {
     grid-column: 2/3;
   }
-
   .aboutP {
     grid-column: 1/3;
     grid-row: 2/3;
@@ -408,7 +399,6 @@ picture {
     margin-top: 30px;
     max-width: 900px;
   }
-
   .resume {
     grid-column: 1/3;
     grid-row: 3/4;
@@ -420,13 +410,11 @@ picture {
     padding-top: 56.25%;
     margin-bottom: 200px;
   }
-
   embed {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-
   #cards {
     margin-bottom: 50px;
   }
@@ -448,7 +436,6 @@ picture {
     margin: 0 auto;
     margin-top: 50px;
   }
-
   #cardhover {
     margin: 0 auto;
     text-align: center;
@@ -464,27 +451,22 @@ picture {
     margin: 0 auto;
     margin-top: 50px;
   }
-
   .myPic img {
     width: 150px;
     border-radius: 50%;
     margin-top: 5px;
     margin-left: 5px;
   }
-
   .myPic {
     grid-column: 2/3;
   }
-
   #cardhover {
     margin: 0 auto;
     text-align: center;
   }
-
   .aboutP {
     padding-bottom: 100px;
   }
-
   .resume {
     width: 300px;
     height: 600px;

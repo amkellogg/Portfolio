@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="ak.css" />
+        <link rel="stylesheet" href="projects.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" type="image/x-icon" href="images/ABfavicon.ico" />
+        <script src="ak.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Gardening App Design</title>
+    </head>
+    <body
+        class="px-7 md:px-8 max-w-7xl flex flex-col items-center mx-auto overflow-x-hidden overflow-y-scroll"
+    >
+        <header class="my-6 w-full flex items-center justify-between">
+            <div class="w-14 h-auto flex">
+                <a href="https://amkellogg.github.io/Portfolio/ak-projects.html">
+                    <img src="images/Alogo.png" alt="logo" />
+                </a>
+            </div>
+
+            <div
+                class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right hidden lg:hidden"
+                id="mobile-menu"
+            >
+                <div
+                    class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+                >
+                    <div class="px-5 pt-4 flex items-center justify-between">
+                        <div>
+                            <img class="h-auto w-14" src="images/Alogo.png" alt="" />
+                        </div>
+                        <div class="-mr-2">
+                            <button
+                                onclick="hide()"
+                                type="button"
+                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            >
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg
+                                    class="h-10 w-10"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-2 pt-2 pb-3">
+                        <a
+                            href="https://amkellogg.github.io/Portfolio/ak-projects.html"
+                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >UX/UI Work</a
+                        >
+                        <!-- 
+                        <a href="https://amkellogg.github.io/Portfolio/ak-otherwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Other Work</a
+                        > -->
+
+                        <a
+                            href="https://amkellogg.github.io/Portfolio/ak-about.html"
+                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >About</a
+                        >
+
+                        <a
+                            href="https://amkellogg.github.io/Portfolio/ak-contact.html"
+                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <nav class="flex space-x-10 hidden lg:flex">
+                <div>
+                    <a
+                        class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2"
+                        href="https://amkellogg.github.io/Portfolio/ak-projects.html"
+                        >UX/UI Work</a
+                    >
+                </div>
+                <!-- <div>
+                    <a class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2" href="https://amkellogg.github.io/Portfolio/ak-otherwork.html">Other Work</a>
+                </div> -->
+                <div>
+                    <a
+                        class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2"
+                        href="https://amkellogg.github.io/Portfolio/ak-about.html"
+                        >About</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="block hover:bg-[#50295A] hover:text-[#ffffff] rounded-2xl p-2"
+                        href="https://amkellogg.github.io/Portfolio/ak-contact.html"
+                        >Contact</a
+                    >
+                </div>
+            </nav>
+            <div class="-mr-2 flex items-center lg:hidden">
+                <button
+                    onclick="show()"
+                    type="button"
+                    class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only"></span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg
+                        class="h-10 w-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <!-- <div class="bg-orange-300 h-20 w-20"></div>
+            <div class="flex justify-end">
+                <div class="menuBar" onclick="show()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div> -->
+        </header>
+        <main>
+            <div class="content">
+                <h1 class="uppercase font-sans text-2xl lg:text-4xl pb-3 text-[#50295A]">
+                    Case Study: Booking App Design - Gardening
+                </h1>
+                <div class="w-3/6 m-auto">
+                    <p>An app designed to help communities share yard space for gardening.</p>
+                    <img class="w-full p-5" id="hd1" src="images/garden1.png" />
+                    <p>
+                        This app idea is for a booking appp specifically for garden space, the
+                        features that this app will provide will allow the users to find and book,
+                        or post unused garden space for others to enjoy. Allowing the community to
+                        share and connect with common interests.
+                    </p>
+                    <p class="uppercase font-sans text-lg lg:text-xl text-[#6486a2] pt-2">
+                        Role: UX Designer
+                    </p>
+                    <p class="uppercase font-sans text-lg lg:text-xl text-[#6486a2]">
+                        School: Brigham Young University - Idaho
+                    </p>
+                    <p class="uppercase font-sans text-lg lg:text-xl text-[#6486a2]">
+                        Date Completed: June 2022
+                    </p>
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        The Goal:
+                    </h3>
+                    <p>
+                        Create a simple user face that will allow for community members to connect
+                        and share garden space and gardening knowledge.
+                    </p>
+                    <p class="pt-5">
+                        Another main part of this case study was to learn about Material Design and
+                        use that in our designs. Using a Figma plugin, we were able to manipluate a
+                        set of componants based on material design. This would help the outcome be
+                        clean and more userfriendly.
+                    </p>
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Research and Personas:
+                    </h3>
+                    <p>
+                        Research is always important to understand what works in booking apps and
+                        what doesn't. I also created several personas to get a feel of who would be
+                        using the app and what their needs would be.
+                    </p>
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Features:
+                    </h3>
+                    <p>
+                        With these personas in mind, I made a list of what features should be
+                        included in this app in order to meet their needs. This helps me to know
+                        what to include in the app and how to organize the content. For this case
+                        study, I will be designing six main screens, they will be listed below.
+                    </p>
+
+                    <img class="w-6/6 p-5" src="images/gfeatures.png" />
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Task Flow & User Flow:
+                    </h3>
+                    <p>
+                        These diagrams and path descriptions are a vital way to understand the users
+                        journey throughout the app. We start with the task flow which outlines what
+                        the user will want to accomplish while using the app. Next we create the
+                        user flow which will help us generate a route through the app to accomplish
+                        the said task. By anticipating how a user will maneuver in the app, we can
+                        predict any areas in the application where a user may get stuck or confused.
+                        Aiding the designer in creating a user friendly app.
+                    </p>
+                    <img class="w-6/6 p-5" src="images/flows.png" />
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Sketches
+                    </h3>
+                    <p>
+                        With these personas, features, task flow and user flow in mind, I begin
+                        drawing sketches on paper to get the feel of how the app can be designed.
+                        This will be the general outline and placement of the features. I will
+                        continue to revise and improve the application’s interface. These are the
+                        first sketches I created.
+                    </p>
+                    <img class="w-6/6 p-5" src="images/gsketches.png" />
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Wireframes:
+                    </h3>
+                    <p>
+                        Taking what worked from my previous sketches, I created low fidelity wire
+                        frames using Figma. These wire frames would be more accurate as to the
+                        features I had set for the design, but it is still to see what works and
+                        what needs to be changed.
+                    </p>
+                    <img class="w-6/6 p-5" src="images/gwireframes.png" />
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Journey Map:
+                    </h3>
+                    <p>
+                        Similar to the personas, user flow and task flow, a journey map helps to
+                        further the design of the application and discover anywhere where there may
+                        be difficulties while using the app. While creating the journey map, you
+                        take one of the personas and walk through the process of using the
+                        application as if you were them. Going through the phases and actions as if
+                        you were in the mindset of the persona. You are trying to see what they
+                        would think during each phase.
+                    </p>
+                    <p class="pt-5">
+                        Then you map out the emotional highs and lows of the personas experience.
+                        This will help you understand the process better and again, be more
+                        empathetic of the users. At the end you write down your insights. Below is
+                        part of the journey map I created based on the persona James.
+                    </p>
+                    <img class="w-6/6 p-5" src="images/gjourneymap.png" />
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Revise:
+                    </h3>
+                    <p>
+                        After creating the Journey Map, I can return to my wireframes to adjust or
+                        makes changes as I saw nesessary during the Journey Map because of some
+                        questions that arose. After creating the wireframe, I added more contant to
+                        the page to complete it.
+                    </p>
+                    <p>
+                        After some critique, I decided to add to it and change some things. The
+                        feedback I got:
+                    </p>
+                    <img class="w-6/6 p-5" src="images/grevise.png" />
+                    <p>
+                        After this feedback I went back to make the changes to make the app more
+                        userfriendly.
+                    </p>
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        Revision Implemented:
+                    </h3>
+                    <p>Here is the revised version of the prototype.</p>
+                    <img class="w-6/6 p-5" src="images/greviseImp.png" />
+
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        User Flow Explained:
+                    </h3>
+                    <p>
+                        Below is the userflow walking through the prototype. This is an example of
+                        how a user would navigate the app if they were looking for and booking land
+                        for their garden.
+                    </p>
+                    <p class="pt-5">
+                        The following images walk through the app with desciptions below.
+                    </p>
+                    <img class="w-6/6 p-5" id="hd" src="images/g1.png" />
+                    <img class="w-6/6 p-5" id="hd" src="images/g2.png" />
+                    <img class="w-6/6 p-5" id="hd" src="images/g3.png" />
+                    <img class="w-6/6 p-5" id="hd" src="images/g4.png" />
+
+                    <h3 class="uppercase font-sans text-xl lg:text-2xl pt-3 text-[#50295A]">
+                        What I Would Change:
+                    </h3>
+                    <p>
+                        If I were to recreate this design, I would conduct more research on how it
+                        would really work. With this knowledge, I would be able to create an even
+                        better design that would be ready to be developed. I love how simple the
+                        current interface is but I would want to add the small details that makes it
+                        feel real.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footerImages">
+                <a href="https://www.linkedin.com/in/anna-kellogg-9553121b6/">
+                    <img src="images/linkedin.png" alt="linkedin" />
+                </a>
+                <a href="instagram.com">
+                    <img src="images/instagram.png" alt="instagram" />
+                </a>
+                <p class="footerInfo">Anna Kellogg | 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

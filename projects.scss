@@ -52,6 +52,28 @@
     .cmo:hover .cmo__overlay {
         opacity: 1;
     }
+    // Garden App
+    .garden {
+        position: relative;
+    }
+    .garden__overlay {
+        position: absolute;
+        bottom: 15px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: 0.5s ease;
+        opacity: 0;
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .garden:hover .garden__overlay {
+        opacity: 1;
+    }
     // Honda App
     .honda {
         position: relative;
@@ -96,7 +118,7 @@
     .wd:hover .wd__overlay {
         opacity: 1;
     }
-
+    //other
     .otherWork__CAL1 {
         padding: 10px;
         &img {
